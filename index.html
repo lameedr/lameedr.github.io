@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	 <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+     <link rel="stylesheet" href="style.css">
+	 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;900&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha256-NuCn4IvuZXdBaFKJOAcsU2Q3ZpwbdFisd5dux4jkQ5w=" crossorigin="anonymous" />
+	 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+  <section id="about">
+    <nav id="sidenav">
+      <ul>
+        <li><a href="emoji.html">Emoji demo</a></li>
+        <li><a href="page2.html">Homework Two</a></li>
+        <li><a href="page3.html">Homework Three</a></li>
+        <li><a href="page4.html">Homework Four</a></li>
+        <li><a href="page5.html">Link to my video</a></li>
+      </ul>
+    </nav>
+    <img src="menu.png" id="menu-btn">
+    <div class="box">
+      <div class="box-content">
+        <h1>Brown Bears</h1>
+        <p>The brown bear (Ursus arctos) is native to parts of<br>
+          northern Eurasia and North America. Its conservation<br>
+          status is currently <span>Least Concern</span></p>
+        <p>
+          There are many subspecies within the brown bear<br>
+          species, including the Atlas bear and the Himalayan<br>
+          brown bear.</p>  
+        <p>
+          Brown bears are omnivorous and feed on berries, plant<br>
+          roots and shoots, small mammals, fish, calves of many<br>
+          hoofed animals, and carrion. They often cache food in<br>
+          shallow holes, and they dig readily and vigorously in<br>
+          search of rodents.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="jquery.counterup.min.js"></script>
+<script src="jquery.waypoints.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<script>
+  var menuBtn = document.getElementById("menu-btn");
+  var sideNav = document.getElementById("sidenav");
+
+  sideNav.style.left = "-250px";
+  menuBtn.onclick = function(){
+    if(sideNav.style.left == "-250px"){
+      sideNav.style.left = "0"
+    }
+    else{
+      sideNav.style.left = "-250px";
+    }
+  }
+</script>
+
+
+</body>
+</html>
